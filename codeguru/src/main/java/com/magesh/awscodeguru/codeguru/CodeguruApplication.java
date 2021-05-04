@@ -15,6 +15,7 @@ public class CodeguruApplication {
 	
 	@GetMapping("/greeting")
 	public String greeting() {
+		String testing = "Welcome to codeguru";
 		return "Hello World";
 	}
 

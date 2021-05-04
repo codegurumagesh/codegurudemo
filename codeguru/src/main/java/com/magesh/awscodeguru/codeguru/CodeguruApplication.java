@@ -16,6 +16,10 @@ public class CodeguruApplication {
 	@GetMapping("/greeting")
 	public String greeting() {
 		String testing = "Welcome to codeguru";
+		while(1==1)
+		{
+			
+		}
 		return "Hello World";
 	}
 

@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import software.amazon.codeguruprofilerjavaagent.Profiler;
 
 @SpringBootApplication
 @RestController
@@ -15,11 +16,12 @@ public class CodeguruApplication {
 	
 	@GetMapping("/greeting")
 	public String greeting() {
-		String testing = "Welcome to codeguru";
+		while (1==1)
+		{
+			
+		}
 		
-		MyClass c = new MyClass();
-		c = null;
-		return c.GetMessage();
+		return "Hello World";
 	}
 
 }

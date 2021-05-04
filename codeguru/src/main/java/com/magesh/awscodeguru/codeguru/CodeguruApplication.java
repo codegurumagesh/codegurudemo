@@ -18,7 +18,7 @@ public class CodeguruApplication {
 		String testing = "Welcome to codeguru";
 		while(1==1)
 		{
-			
+			String welcome = "welcome";
 		}
 		return "Hello World";
 	}

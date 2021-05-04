@@ -1,5 +1,9 @@
 package com.magesh.awscodeguru.codeguru;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Random;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,11 +19,17 @@ public class CodeguruApplication {
 	
 	@GetMapping("/greeting")
 	public String greeting() {
-		String testing = "Welcome to codeguru";
+
 		
-		MyClass c = new MyClass();
-		c = null;
-		return c.GetMessage();
+		Random rand = new Random();
+		
+		DateFormat currentDateformat = new SimpleDateFormat("dd MM yyy");
+		
+		String message = "This is a message on sqs " + Double.toString(rand.nextDouble()) + " at " + currentDateformat.toString(); 
+		
+		System.out.println(message);
+		
+		return "Hello World";
 	}
 
 }
